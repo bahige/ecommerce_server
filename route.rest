@@ -1,0 +1,25 @@
+GET   http://localhost:3200/api/products
+###
+
+GET   http://localhost:3200/api/products/5f6e30cf3ce0a9b87176a748
+###
+
+PUT    http://localhost:3200/api/products/5f6f70b3eaa8be78f07ff51e
+Content-Type: application/json
+
+{"price":"40",
+"countInStock":"8",
+"rating":"4.2",
+"numReviews":"4",
+"name":"Colorful T-Shirts",
+"image":"/images/d7.jpg",
+"brand":"Adidas",
+"category":"Shirts",
+"description":"test"}
+
+###
+
+POST  http://localhost:3200/api/products/5f6e2f243ce0a9b87176a744/reviews
+
+###
+GET   http://localhost:3200/api/products/5f6e2f243ce0a9b87176a744
